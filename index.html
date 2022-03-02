@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/main.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="weather-app" class="weather-app wrapper">
+      <header>
+        <h3 class="weather-app__name"></h3>
+        <p class="weather-app__time"></p>
+        <h2 class="weather-app__temp"></h2>
+        <img class="weather-app__ico" src="#" />
+        <p class="weather-app__status"></p>
+      </header>
+      <main>
+        <div>
+          <p class="weather-app__feels-like"></p>
+          <p class="weather-app__pressure"></p>
+          <p class="weather-app__wind"></p>
+          <p class="weather-app__humidity"></p>
+        </div>
+        <div class="weather-app__search">
+          <input
+            type="text"
+            class="weather-app__input"
+            placeholder="Wyszukaj Miasto"
+          />
+          <button class="weather-app__btn">Pokaż wyniki</button>
+          <p class="weather-app__error"></p>
+        </div>
+      </main>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

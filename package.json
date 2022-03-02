@@ -1,0 +1,7 @@
+{
+  "name": "my-weather",
+  "scripts": {
+    "sass": "saas --watch .scss/main.scss ./style/main.css --style compressed",
+    "sass:watch": "sass --watch ./scss/main.scss ./style/main.css --style compressed"
+  }
+} 
