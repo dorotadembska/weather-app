@@ -23,7 +23,7 @@ const weatherInfo = (info) => {
   weatherStatus.textContent = info.weather[0].description;
   weatherIco.setAttribute(
     "src",
-    `http://openweathermap.org/img/wn/${info.weather[0].icon}@2x.png`
+    `https://openweathermap.org/img/wn/${info.weather[0].icon}@2x.png`
   );
   weatherTime.textContent = new Date().toLocaleDateString();
   
@@ -34,7 +34,7 @@ const weatherInfo = (info) => {
 };
 
 const getWeatherBySearch = (city) => {
-  const URL = `http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}&lang=pl`;
+  const URL = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}&lang=pl`;
   fetch(URL)
     .then((res) => {
       if (!res.ok) {
@@ -49,7 +49,7 @@ const getWeatherBySearch = (city) => {
 //Krok2: pobiermy informacje o pogodzie z naszej szerokości geograficznej i wywołujemy funkcję
 //weatherInfo przekazując do niej odpowiedź z naszego fetch/then
 const getWheaterByLocation = (coords) => {
-  const URL = `http://api.openweathermap.org/data/2.5/weather?lat=${coords.latitude}&lon=${coords.longitude}&appid=${API_KEY}&lang=pl`;
+  const URL = `https://api.openweathermap.org/data/2.5/weather?lat=${coords.latitude}&lon=${coords.longitude}&appid=${API_KEY}&lang=pl`;
   fetch(URL)
     .then((res) => {
       if (!res.ok) {
